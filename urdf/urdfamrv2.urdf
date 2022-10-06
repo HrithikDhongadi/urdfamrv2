@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="urdfamrv2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0177643525771211 -0.000160993938675101 -0.0300835599325023"
+        rpy="0 0 0" />
+      <mass
+        value="10.0323956886448" />
+      <inertia
+        ixx="0.121481181408484"
+        ixy="4.99832632722136E-06"
+        ixz="0.00133215329818063"
+        iyy="0.120564492716562"
+        iyz="6.93637170319615E-07"
+        izz="0.225310260618626" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="linkfrontleft">
+    <inertial>
+      <origin
+        xyz="0.00486777207299285 -1.00390112889315E-10 -0.00919906935736482"
+        rpy="0 0 0" />
+      <mass
+        value="0.0145542102257426" />
+      <inertia
+        ixx="1.09550256894124E-06"
+        ixy="-4.9902635445605E-15"
+        ixz="1.38605292642401E-07"
+        iyy="8.15088209063063E-07"
+        iyz="1.43312162943118E-13"
+        izz="1.39418606238894E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontleft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontleft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frontleftjoint"
+    type="continuous">
+    <origin
+      xyz="0.127476918751024 0.198968594229539 -0.1387"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkfrontleft" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkfrontleftwheel">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00860106805645204" />
+      <inertia
+        ixx="5.60947696052157E-07"
+        ixy="5.64114385290835E-23"
+        ixz="7.24786767464638E-39"
+        iyy="8.7056647481272E-07"
+        iyz="2.58667410873886E-23"
+        izz="5.60947696052157E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontleftwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontleftwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frontleftwheeljoint"
+    type="continuous">
+    <origin
+      xyz="0.0115 4.99999999999667E-05 -0.01975"
+      rpy="0 0 0" />
+    <parent
+      link="linkfrontleft" />
+    <child
+      link="linkfrontleftwheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkfrontright">
+    <inertial>
+      <origin
+        xyz="0.00486777207299288 -1.00390112889315E-10 -0.00919906935736481"
+        rpy="0 0 0" />
+      <mass
+        value="0.0145542102257426" />
+      <inertia
+        ixx="1.09550256894124E-06"
+        ixy="-4.99025010118564E-15"
+        ixz="1.38605292642399E-07"
+        iyy="8.1508820906306E-07"
+        iyz="1.43312150820266E-13"
+        izz="1.39418606238894E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frontrightjoint"
+    type="continuous">
+    <origin
+      xyz="0.127476918751023 -0.199031405770461 -0.1387"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkfrontright" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkfrontrightwheel">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 0 1.73472347597681E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00860106805645204" />
+      <inertia
+        ixx="5.60947696052158E-07"
+        ixy="6.28709636152826E-23"
+        ixz="-6.71159324065182E-24"
+        iyy="8.7056647481272E-07"
+        iyz="1.71740024517124E-24"
+        izz="5.60947696052158E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontrightwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkfrontrightwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="frontrightweeljoint"
+    type="continuous">
+    <origin
+      xyz="0.0115 5.00000000000222E-05 -0.01975"
+      rpy="0 0 0" />
+    <parent
+      link="linkfrontright" />
+    <child
+      link="linkfrontrightwheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkrearleft">
+    <inertial>
+      <origin
+        xyz="0.00486777207299278 -1.00390112889315E-10 -0.00919906935736473"
+        rpy="0 0 0" />
+      <mass
+        value="0.0145542102257424" />
+      <inertia
+        ixx="1.09550256894122E-06"
+        ixy="-4.99025791376239E-15"
+        ixz="1.38605292642382E-07"
+        iyy="8.15088209063025E-07"
+        iyz="1.4331215654502E-13"
+        izz="1.39418606238891E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearleft.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearleft.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rearleftjoint"
+    type="continuous">
+    <origin
+      xyz="-0.127523081248976 0.19896859422954 -0.1387"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkrearleft" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkrearleftwheel">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 0 1.73472347597681E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00860106805645204" />
+      <inertia
+        ixx="5.60947696052158E-07"
+        ixy="6.61545791442258E-23"
+        ixz="-6.76414505894308E-24"
+        iyy="8.7056647481272E-07"
+        iyz="1.51222004710173E-24"
+        izz="5.60947696052158E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearleftwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearleftwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rearleftwheeljoint"
+    type="continuous">
+    <origin
+      xyz="0.0115 5.00000000000222E-05 -0.01975"
+      rpy="0 0 0" />
+    <parent
+      link="linkrearleft" />
+    <child
+      link="linkrearleftwheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkrearright">
+    <inertial>
+      <origin
+        xyz="0.00486777207299287 -1.00390168400466E-10 -0.00919906935736483"
+        rpy="0 0 0" />
+      <mass
+        value="0.0145542102257427" />
+      <inertia
+        ixx="1.09550256894126E-06"
+        ixy="-4.99025430369156E-15"
+        ixz="1.38605292642403E-07"
+        iyy="8.15088209063071E-07"
+        iyz="1.43312157945304E-13"
+        izz="1.39418606238896E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearright.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.898039215686275 0.898039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearright.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rearrightjoint"
+    type="continuous">
+    <origin
+      xyz="-0.127523081248977 -0.19903140577046 -0.1387"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkrearright" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkrearrightwheel">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-17 -0.398 1.73472347597681E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00860106805645204" />
+      <inertia
+        ixx="5.60947696052158E-07"
+        ixy="6.61545791442258E-23"
+        ixz="-6.76414505894308E-24"
+        iyy="8.7056647481272E-07"
+        iyz="1.51222004710173E-24"
+        izz="5.60947696052158E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearrightwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrearrightwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rearrightwheeljoint"
+    type="continuous">
+    <origin
+      xyz="0.0115000000000001 0.39805 -0.01975"
+      rpy="0 0 0" />
+    <parent
+      link="linkrearright" />
+    <child
+      link="linkrearrightwheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkleftwheel">
+    <inertial>
+      <origin
+        xyz="-1.95465918673215E-07 -0.0107995773104437 -2.31143510954629E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.07359334471716" />
+      <inertia
+        ixx="0.00132624792012178"
+        ixy="1.34971364901024E-09"
+        ixz="-2.97767681852217E-09"
+        iyy="0.00242841647930193"
+        iyz="1.84182544910959E-08"
+        izz="0.00132644709385717" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkleftwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkleftwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftwheeljoint"
+    type="continuous">
+    <origin
+      xyz="-2.30812489653795E-05 0.19996859422953 -0.0965"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkleftwheel" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linkrightwheel">
+    <inertial>
+      <origin
+        xyz="1.95465891785837E-07 0.0107995773104531 -2.31143510956919E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.07359334471716" />
+      <inertia
+        ixx="0.00132624792012178"
+        ixy="1.34971364898648E-09"
+        ixz="2.97767681852187E-09"
+        iyy="0.00242841647930194"
+        iyz="-1.84182544910958E-08"
+        izz="0.00132644709385718" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrightwheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linkrightwheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightwheeljoint"
+    type="continuous">
+    <origin
+      xyz="-2.30812489631387E-05 -0.20003140577047 -0.0964999999999999"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linkrightwheel" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="linklidar">
+    <inertial>
+      <origin
+        xyz="-0.000934114123158664 -0.000257111559113189 -0.012214812339934"
+        rpy="0 0 0" />
+      <mass
+        value="0.163065638152251" />
+      <inertia
+        ixx="6.07268103362095E-05"
+        ixy="1.10369384352206E-07"
+        ixz="-2.32156900420164E-07"
+        iyy="6.0437153377206E-05"
+        iyz="-6.56085972110151E-08"
+        izz="0.000107589150508222" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linklidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://urdfamrv2/meshes/linklidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidarjoint"
+    type="fixed">
+    <origin
+      xyz="0.239976918751023 -3.14057704717225E-05 0.00130000000000047"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="linklidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
